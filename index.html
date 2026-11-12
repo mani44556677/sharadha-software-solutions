@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sharadha Software Solutions provides IT recruitment and DevOps services across India.">
+  <title>Sharadha Software Solutions | IT Recruitment & DevOps</title>
+  <style>
+    :root { --navy:#10243b; --blue:#1769aa; --sky:#eaf3fb; --ink:#1c2b3a; --muted:#617184; --white:#fff; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; font-family:Arial, Helvetica, sans-serif; color:var(--ink); line-height:1.6; }
+    a { color:inherit; text-decoration:none; }
+    .wrap { width:min(1120px, 92%); margin:auto; }
+    header { background:#fff; position:sticky; top:0; z-index:10; box-shadow:0 2px 14px #10243b12; }
+    .nav { min-height:76px; display:flex; align-items:center; justify-content:space-between; gap:20px; }
+    .brand { display:flex; align-items:center; gap:12px; font-weight:800; color:var(--navy); letter-spacing:.3px; }
+    .logo { width:43px; height:43px; border-radius:11px; display:grid; place-items:center; background:var(--navy); color:white; font-size:25px; }
+    .brand small { display:block; font-size:10px; letter-spacing:2px; color:var(--muted); }
+    nav { display:flex; gap:25px; align-items:center; font-size:14px; font-weight:600; }
+    nav a:hover { color:var(--blue); }
+    .btn { display:inline-block; background:var(--blue); color:#fff; padding:12px 20px; border-radius:7px; font-weight:700; border:0; }
+    .btn:hover { background:#10558c; }
+    .hero { background:linear-gradient(115deg, #10243b 0%, #163f67 70%, #1769aa 100%); color:#fff; padding:92px 0 88px; }
+    .hero-grid { display:grid; grid-template-columns:1.25fr .75fr; gap:48px; align-items:center; }
+    .eyebrow { color:#a9d7ff; text-transform:uppercase; font-size:12px; font-weight:800; letter-spacing:2px; }
+    h1 { font-size:clamp(36px,5vw,58px); line-height:1.1; margin:15px 0 20px; letter-spacing:-1.4px; }
+    .hero p { color:#dce9f5; font-size:18px; max-width:650px; margin-bottom:28px; }
+    .hero-card { background:#ffffff12; border:1px solid #ffffff2b; padding:27px; border-radius:16px; }
+    .hero-card h3 { margin:0 0 14px; font-size:20px; }
+    .hero-card ul { margin:0; padding-left:19px; color:#e4eff8; }
+    .hero-card li { margin:10px 0; }
+    section { padding:76px 0; }
+    .section-head { max-width:700px; margin:0 auto 38px; text-align:center; }
+    .section-head .eyebrow { color:var(--blue); }
+    h2 { color:var(--navy); font-size:clamp(28px,3vw,38px); line-height:1.2; margin:10px 0 13px; }
+    .section-head p, .muted { color:var(--muted); }
+    .cards { display:grid; grid-template-columns:repeat(2,1fr); gap:22px; }
+    .card { border:1px solid #e1e9f0; border-radius:13px; padding:28px; background:#fff; box-shadow:0 8px 25px #10243b08; }
+    .icon { width:47px; height:47px; display:grid; place-items:center; border-radius:12px; background:var(--sky); color:var(--blue); font-size:22px; font-weight:800; }
+    .card h3 { color:var(--navy); margin:17px 0 8px; font-size:21px; }
+    .card p { color:var(--muted); margin:0; }
+    .soft { background:#f5f8fb; }
+    .two-col { display:grid; grid-template-columns:1fr 1fr; gap:55px; align-items:center; }
+    .checklist { list-style:none; padding:0; margin:20px 0 0; }
+    .checklist li { padding:8px 0 8px 29px; position:relative; }
+    .checklist li:before { content:"✓"; position:absolute; left:0; color:var(--blue); font-weight:800; }
+    .steps { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; }
+    .step { padding:23px; border-radius:12px; background:#fff; border:1px solid #e1e9f0; }
+    .step b { color:var(--blue); font-size:13px; letter-spacing:1px; }
+    .step h3 { color:var(--navy); margin:8px 0; }
+    .cta { background:var(--navy); color:#fff; text-align:center; padding:65px 20px; }
+    .cta h2 { color:#fff; }
+    .cta p { color:#d4e1ed; max-width:650px; margin:0 auto 25px; }
+    .contact-grid { display:grid; grid-template-columns:1fr 1fr; gap:22px; }
+    .contact-item { padding:20px; background:#f5f8fb; border-radius:10px; }
+    .contact-item strong { display:block; color:var(--navy); margin-bottom:5px; }
+    footer { background:#0b1b2d; color:#d7e2ed; padding:25px 0; font-size:13px; }
+    footer .foot { display:flex; justify-content:space-between; gap:15px; flex-wrap:wrap; }
+    @media(max-width:760px) {
+      .nav { padding:13px 0; align-items:flex-start; flex-direction:column; }
+      nav { gap:14px; flex-wrap:wrap; font-size:13px; }
+      .hero { padding:65px 0; }
+      .hero-grid,.two-col,.contact-grid { grid-template-columns:1fr; }
+      .cards,.steps { grid-template-columns:1fr; }
+      section { padding:58px 0; }
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#home">
+      <span class="logo">S</span>
+      <span>SHARADHA<small>SOFTWARE SOLUTIONS</small></span>
+    </a>
+    <nav aria-label="Main navigation">
+      <a href="#home">Home</a><a href="#about">About</a><a href="#services">Services</a><a href="#process">Our Process</a><a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero" id="home">
+    <div class="wrap hero-grid">
+      <div>
+        <div class="eyebrow">IT Recruitment &amp; DevOps Services · India</div>
+        <h1>Connecting the right talent with the right technology.</h1>
+        <p>Sharadha Software Solutions helps businesses find skilled IT professionals and access practical DevOps support to move technology projects forward.</p>
+        <a class="btn" href="#contact">Talk to Our Team</a>
+      </div>
+      <aside class="hero-card">
+        <h3>How we can help</h3>
+        <ul>
+          <li>IT talent sourcing and recruitment support</li>
+          <li>Candidate screening and coordination</li>
+          <li>DevOps and cloud engineering support</li>
+          <li>Practical, responsive client communication</li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">What we do</div>
+        <h2>Services built around your technology goals</h2>
+        <p>Flexible support for organizations looking to strengthen their teams and improve software delivery.</p>
+      </div>
+      <div class="cards">
+        <article class="card">
+          <div class="icon">01</div>
+          <h3>IT Recruitment</h3>
+          <p>We support hiring for technology roles by sourcing relevant profiles, coordinating screening conversations and helping move candidates through the recruitment process.</p>
+        </article>
+        <article class="card">
+          <div class="icon">02</div>
+          <h3>DevOps Services</h3>
+          <p>We provide project-based DevOps support across CI/CD automation, containerization, cloud infrastructure and deployment workflows, based on project requirements and team capability.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="soft" id="about">
+    <div class="wrap two-col">
+      <div>
+        <div class="eyebrow">About Sharadha</div>
+        <h2>A responsive partner for people and technology</h2>
+        <p class="muted">Sharadha Software Solutions is an India-focused business offering IT recruitment and DevOps services. We aim to understand each requirement clearly, communicate transparently and support practical outcomes for clients and candidates.</p>
+      </div>
+      <div>
+        <h3 style="color:#10243b;margin-top:0">Our working principles</h3>
+        <ul class="checklist">
+          <li>Understand the requirement before sourcing or proposing a solution.</li>
+          <li>Prioritize relevant skills and clear communication.</li>
+          <li>Keep clients and candidates updated through the process.</li>
+          <li>Be transparent about capabilities, timelines and expectations.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="process">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">How we work</div>
+        <h2>A clear and collaborative process</h2>
+        <p>We keep each engagement straightforward, from the first conversation to delivery and follow-up.</p>
+      </div>
+      <div class="steps">
+        <article class="step"><b>STEP 01</b><h3>Understand</h3><p class="muted">Discuss the hiring need or technical requirement, priorities and expected timelines.</p></article>
+        <article class="step"><b>STEP 02</b><h3>Match</h3><p class="muted">Identify suitable candidates or define an appropriate DevOps support approach.</p></article>
+        <article class="step"><b>STEP 03</b><h3>Coordinate</h3><p class="muted">Maintain communication, support next steps and follow through on agreed deliverables.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="wrap">
+      <h2>Let's discuss your next requirement.</h2>
+      <p>Whether you are hiring IT talent or exploring DevOps support, tell us what you need. We will get back to you to discuss the next steps.</p>
+      <a class="btn" href="mailto:sharadhasoftwaresolutions@gmail.com?subject=Business%20Enquiry">Send an Enquiry</a>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">Contact</div>
+        <h2>Get in touch with us</h2>
+        <p>For recruitment requirements, candidate enquiries or DevOps service discussions, contact Sharadha Software Solutions.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-item"><strong>Email</strong><a href="mailto:sharadhasoftwaresolutions@gmail.com">sharadhasoftwaresolutions@gmail.com</a></div>
+        <div class="contact-item"><strong>Phone / WhatsApp</strong><a href="https://wa.me/919959447917">+91 99594 47917</a></div>
+        <div class="contact-item"><strong>Service area</strong><span>India</span></div>
+        <div class="contact-item"><strong>Business hours</strong><span>By appointment / prior coordination</span></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <span>© <span id="year"></span> Sharadha Software Solutions. All rights reserved.</span>
+    <span>IT Recruitment · DevOps Services · India</span>
+  </div>
+</footer>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
